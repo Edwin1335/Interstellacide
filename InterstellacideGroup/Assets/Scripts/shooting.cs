@@ -25,14 +25,14 @@ public class Weapon : MonoBehaviour
                 Enemy enemyHit = hit.transform.GetComponent<Enemy>();
                 //if we hit enemy make sure he takes damage
                 if(enemyHit != null){
-                    enemyHit.takeDamage(damage)
+                    // enemyHit.takeDamage(damage);
                 }
 
 
                 //@TODO: add impact effect 
 
                 //@TODO: add ray cast line to see ray when fired
-                
+
             }
 
         }
