@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public Transform fire;
-    public int damage;
+    public Transform fire; //point of fire from gun
+    public int damage = 10; //damage enemy takes 
 
     // Start is called before the first frame update
     void Start()
