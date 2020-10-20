@@ -6,7 +6,7 @@ public class MovementController : MonoBehaviour
 {
     public float movementSpeed = 3.0f;
     Vector2 movement = new Vector2();
-
+    // private bool facingRight;
     Animator animator;
 
     string animationState = "AnimationState";
@@ -72,4 +72,8 @@ public class MovementController : MonoBehaviour
             animator.SetInteger(animationState, (int)CharStates.idleSouth);
         }
     }
+
+    // private void Flip(){
+
+    // }
 }
