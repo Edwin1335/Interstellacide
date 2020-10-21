@@ -9,22 +9,21 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         //rigid body move right according to speed
-        rb.velocity = transform.right *  speed;
+        rb.velocity = transform.right * speed;
     }
 
     void Update()
     {
-        
+
     }
 
-   void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         //if collision object has  tag "CanBePickedUp", aka coins, hearts, etc...
         if (collision.gameObject.CompareTag("Enemy"))
-        {   
+        {
             print("HIT ENEMY");
-
-
+            Destroy(gameObject, .01f);
         }
     }
 }
