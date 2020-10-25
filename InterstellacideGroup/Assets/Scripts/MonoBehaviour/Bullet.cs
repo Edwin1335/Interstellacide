@@ -19,10 +19,11 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        //if collision object has  tag "CanBePickedUp", aka coins, hearts, etc...
+        //if collision object has  tag "Enemy", aka coins, hearts, etc...
         if (collision.gameObject.CompareTag("Enemy"))
         {
             print("HIT ENEMY");
+            /* get rid of bullet */
             Destroy(gameObject, .01f);
         }
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-      public Transform firePoint; //point of fire from gun
+    public Transform firePoint; //point of fire from gun
     public int damage = 10; //damage enemy takes 
     public GameObject bulletPrefab;
 

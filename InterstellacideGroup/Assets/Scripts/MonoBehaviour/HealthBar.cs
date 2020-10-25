@@ -3,9 +3,11 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
+    /* Shared reference with Player  */
     public HitPoints hitPoints;
 
     [HideInInspector]
+    /* Player character */
     public Character character;
 
     public Image meterImage;
@@ -21,6 +23,7 @@ public class HealthBar : MonoBehaviour
 
     void Update()
     {
+        /* Update healthbar based on players life value */
         if (character != null)
         {
             meterImage.fillAmount = hitPoints.value / maxHitPoints;
