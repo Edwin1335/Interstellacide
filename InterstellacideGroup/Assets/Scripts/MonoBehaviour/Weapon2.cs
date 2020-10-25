@@ -3,6 +3,9 @@
 public class Weapon2 : MonoBehaviour
 {
     private Transform aimTransform;
+    public Transform firePoint; //point of fire from gun
+    public int damage = 10; //damage enemy takes 
+    public GameObject bulletPrefab;
 
     private void Awake()
     {
@@ -12,6 +15,10 @@ public class Weapon2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetButtonDown("Fire1")){
+            Instantiate(bulletPrefab,firePoint.position, firePoint.rotation);
+            // Shoot();
+        }
         HandleAiming();
     }
 

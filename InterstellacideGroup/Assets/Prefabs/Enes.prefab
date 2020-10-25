@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 84202595}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeaponBarre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 674547207}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Aim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674547206}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.54, y: -0.1, z: 7.192924}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 863295228}
@@ -74,7 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 863295228}
   - component: {fileID: 863295229}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeaponCase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2104679659}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104679658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.37, y: 0, z: 0}
+  m_LocalPosition: {x: 3.4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 674547207}
@@ -186,7 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2121105649}
   - component: {fileID: 2121105650}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4121167080995626473}
   - component: {fileID: 4121167080995626472}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flmae1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4121167081098635697}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,9 +388,10 @@ GameObject:
   - component: {fileID: 4121167081187640467}
   - component: {fileID: 8432780256803722003}
   - component: {fileID: 2117635527}
-  m_Layer: 0
+  - component: {fileID: 8958782848347799988}
+  m_Layer: 8
   m_Name: Enes
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -431,7 +432,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &4121167081187640466
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -499,6 +500,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a6b189010267a04895402154977cae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firePoint: {fileID: 2104679659}
+  damage: 10
+  bulletPrefab: {fileID: 2978124753272218876, guid: 351d7fce42edd4b95ae6ebea5fbe801c, type: 3}
+--- !u!114 &8958782848347799988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4121167081187640470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293cd7c9a1e89371e98439f89e6b5d7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: {fileID: 11400000, guid: f9f27ce03a6770d6dab52eea136223a8, type: 2}
+  startingHitPoints: 0
+  maxHitPoints: 3
+  characterCategory: 0
+  healthBarPrefab: {fileID: 0}
 --- !u!1 &4121167081642326683
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4121167081642326682}
   - component: {fileID: 4121167081642326693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -591,7 +612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4121167081974375930}
   - component: {fileID: 4121167081974375813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,7 +694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4121167082765888559}
   - component: {fileID: 4121167082765888558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}

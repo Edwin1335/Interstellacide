@@ -2,6 +2,17 @@ using UnityEngine;
 
 public abstract class Character : MonoBehaviour {
 
-    public int hitPoints; //health points
-    public int maxHitPoints; //max health until dead
+    
+    public HitPoints hitPoints;
+
+    public float startingHitPoints;
+    public float maxHitPoints;
+
+    public enum CharacterCategory
+    {
+        PLAYER,
+        ENEMY
+    }
+
+    public CharacterCategory characterCategory;
 }

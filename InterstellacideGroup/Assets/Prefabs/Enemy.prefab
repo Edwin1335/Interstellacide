@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2635984760661782408}
   - component: {fileID: -2731098818396068868}
   - component: {fileID: -4697096434950672105}
+  - component: {fileID: 3300387620420080903}
   m_Layer: 10
   m_Name: Enemy
   m_TagString: Enemy
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5456559971438279517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1, y: 1, z: 0}
-  m_LocalScale: {x: 2.1666, y: 2.1666, z: 2.1666}
+  m_LocalScale: {x: 6.2918067, y: 6.2918067, z: 6.2918067}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -151,3 +152,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3300387620420080903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5456559971438279517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 879b2b01e3657f290ab63251881799f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: {fileID: 0}
+  startingHitPoints: 0
+  maxHitPoints: 0
+  characterCategory: 0
