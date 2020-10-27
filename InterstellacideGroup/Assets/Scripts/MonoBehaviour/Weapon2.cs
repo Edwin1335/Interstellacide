@@ -15,7 +15,7 @@ public class Weapon2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1")){
+        if(Input.GetKey(KeyCode.Mouse0)){
             Instantiate(bulletPrefab,firePoint.position, firePoint.rotation);
             // Shoot();
         }
