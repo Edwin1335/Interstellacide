@@ -21,24 +21,15 @@ public class Weapon2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
-        if(Input.GetKey(KeyCode.Mouse0)){
-            if(!PauseMenu.GamePause){
-                Instantiate(bulletPrefab,firePoint.position, firePoint.rotation);
-            }
-            // Shoot();
 
-            HandleAiming();
-=======
         if (Input.GetKey(KeyCode.Mouse0) && Time.time > nextFire)
         {
-            nextFire = Time.time + fireRate;
-            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
->>>>>>> 01d59506d55314083b9ecb7d3b354fe3b76a7133
+            if(!PauseMenu.GamePause){
+                nextFire = Time.time + fireRate;
+                Instantiate(bulletPrefab,firePoint.position, firePoint.rotation);
+            }
         }
-        // if(Input.GetKey(KeyCode.Mouse0)){
-        //     HandleAiming();
-        // }
+        HandleAiming();
     }
 
     private void HandleAiming()
