@@ -9,17 +9,26 @@ public class Weapon2 : MonoBehaviour
 
     private void Awake()
     {
-        aimTransform = transform.Find("Aim");
+        if(!PauseMenu.GamePause){
+            aimTransform = transform.Find("Aim");
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKey(KeyCode.Mouse0)){
-            Instantiate(bulletPrefab,firePoint.position, firePoint.rotation);
+            if(!PauseMenu.GamePause){
+                Instantiate(bulletPrefab,firePoint.position, firePoint.rotation);
+            }
             // Shoot();
+
+            HandleAiming();
         }
-        HandleAiming();
+        // if(Input.GetKey(KeyCode.Mouse0)){
+        //     HandleAiming();
+        // }
     }
 
     private void HandleAiming()
