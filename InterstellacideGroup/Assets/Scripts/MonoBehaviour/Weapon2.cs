@@ -27,8 +27,7 @@ public class Weapon2 : MonoBehaviour
                 nextFire = Time.time + fireRate;
                 Instantiate(bulletPrefab,firePoint.position, firePoint.rotation);
             }
-
-            HandleAiming();            
+            HandleAiming();
         }
     }
 
