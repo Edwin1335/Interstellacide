@@ -123,6 +123,114 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &5327212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5327216}
+  - component: {fileID: 5327215}
+  - component: {fileID: 5327214}
+  - component: {fileID: 5327213}
+  m_Layer: 0
+  m_Name: PlayerConfiner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!68 &5327213
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327212}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 33.954407, y: 23.357302}
+  - {x: -48.88913, y: 23.3573}
+  - {x: -48.889126, y: -26.992165}
+  - {x: 33.95441, y: -26.99216}
+  - {x: 33.95441, y: 23.3573}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!60 &5327214
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327212}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 33.954407, y: 23.357302}
+      - {x: -48.88913, y: 23.3573}
+      - {x: -48.889126, y: -26.992165}
+      - {x: 33.95441, y: -26.99216}
+--- !u!50 &5327215
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327212}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!4 &5327216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327212}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.794905, y: 7.008217, z: -4.1643476}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &420539167
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,7 +389,7 @@ Transform:
   m_LocalScale: {x: 4.297061, y: 4.8847575, z: 1.6026}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &626361609
 GameObject:
@@ -471,7 +579,7 @@ Camera:
   field of view: 28.912481
   orthographic: 1
   orthographic size: 19.36
-  m_Depth: 6
+  m_Depth: 6.4
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -494,11 +602,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719567569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.52001, y: 1.08, z: -75.08}
+  m_LocalPosition: {x: -5.676443, y: 1.0799989, z: -75.08}
   m_LocalScale: {x: 2.8792, y: 2.8792, z: 2.8792}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &719567573
 MonoBehaviour:
@@ -790,7 +898,7 @@ RectTransform:
   - {fileID: 420539168}
   - {fileID: 754810715}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -992,15 +1100,15 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 3.56
+  m_XDamping: 4.1
   m_YDamping: 3.61
   m_ZDamping: 0
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5002907
-  m_ScreenY: 0.5
+  m_ScreenY: 0.49999997
   m_CameraDistance: 75.08
-  m_DeadZoneWidth: 0.097
-  m_DeadZoneHeight: 0.102
+  m_DeadZoneWidth: 0.11366666
+  m_DeadZoneHeight: 0.12792593
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8
@@ -1354,7 +1462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3225252950700275639, guid: 4de4219fd43441622927e36cad08f1a4, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3225252950700275639, guid: 4de4219fd43441622927e36cad08f1a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1686,6 +1794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2062153879}
   - component: {fileID: 2062153878}
+  - component: {fileID: 2062153880}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -1736,13 +1845,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062153877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.52001, y: 1.08, z: -75.08}
+  m_LocalPosition: {x: -6.52001, y: 1.0799989, z: -75.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 901681707}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2062153880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062153877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConfineMode: 0
+  m_BoundingVolume: {fileID: 0}
+  m_BoundingShape2D: {fileID: 5327214}
+  m_ConfineScreenEdges: 1
+  m_Damping: 0
 --- !u!1001 &4121167081410330565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1780,7 +1906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4121167081187640464, guid: c0b63570bd912b449b0e08152abff9bc, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4121167081187640464, guid: c0b63570bd912b449b0e08152abff9bc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
