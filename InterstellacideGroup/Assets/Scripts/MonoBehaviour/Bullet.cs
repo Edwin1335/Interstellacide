@@ -7,6 +7,10 @@ public class Bullet : MonoBehaviour
     public float speed = 10f;
     public Rigidbody2D rb;
 
+    public Sprite upgradedBullet;
+    public int cuPoints;
+    private const int pointsGoal = 3;
+
     void Start()
     {
         //rigid body move right according to speed
@@ -16,6 +20,11 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         Destroy(this.gameObject, 4);
+
+        if (cuPoints >= pointsGoal)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = upgradedBullet;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)

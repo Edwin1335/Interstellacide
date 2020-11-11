@@ -136,3 +136,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 24.92
   rb: {fileID: 1362840455874114193}
+  upgradedBullet: {fileID: 21300000, guid: aeda82ad3b584b84080e374ac30b97a2, type: 3}
+  cuPoints: 0

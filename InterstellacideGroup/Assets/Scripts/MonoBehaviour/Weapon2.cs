@@ -9,6 +9,8 @@ public class Weapon2 : MonoBehaviour
     public float fireRate = 0.5f;
     private float nextFire = 0.0f;
 
+    private const int pointGoal = 3;
+    public int cuPoints = 0;
 
     private void Awake()
     {
@@ -28,6 +30,11 @@ public class Weapon2 : MonoBehaviour
                 Instantiate(bulletPrefab,firePoint.position, firePoint.rotation);
             }
             HandleAiming();
+        }
+        // if player is using upgraded weapon
+        if(cuPoints >= pointGoal)
+        {
+            damage = 20;
         }
     }
 
