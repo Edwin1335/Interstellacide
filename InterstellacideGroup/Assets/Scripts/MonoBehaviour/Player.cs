@@ -8,17 +8,22 @@ public class Player : Character
 
 
     public HealthBar healthBarPrefab;
+    public StarDustBar starDustBarPrefab;
     HealthBar healthBar;
+    StarDustBar starDustBar;
 
     public void Start()
-	{
+    {
         hitPoints.value = startingHitPoints;
+        startDustPoints.value = startingStarDustPoints;
         // inventory = Instantiate(inventoryPrefab);
         healthBar = Instantiate(healthBarPrefab);
+        starDustBar = Instantiate(starDustBarPrefab);
         healthBar.character = this;
-	}
+        starDustBar.character = this;
+    }
 
-	void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("CanBePickedUp"))
         {
@@ -30,12 +35,11 @@ public class Player : Character
 
                 switch (hitObject.itemType)
                 {
-                    case Item.ItemType.COIN:
-                    shouldDisappear = true;
-                        // shouldDisappear = inventory.AddItem(hitObject);
-                        break;
                     case Item.ItemType.HEALTH:
-                        shouldDisappear = AdjustHitPoints(hitObject.quantity);
+                        shouldDisappear = IncreaseHitPoints(hitObject.quantity);
+                        break;
+                    case Item.ItemType.STARDUST:
+                        shouldDisappear = IncreaseStarDustPoints(hitObject.quantity);
                         break;
                     default:
                         break;
@@ -47,13 +51,40 @@ public class Player : Character
                 }
             }
         }
+        if (collision.gameObject.CompareTag("DamageUfoAlien"))
+        {
+            print("HIT PLAYER");
+            DecreaseHitPoints(2);
+        }
     }
 
-    public bool AdjustHitPoints(int amount)
+    public bool IncreaseHitPoints(int amount)
     {
         if (hitPoints.value < maxHitPoints)
         {
             hitPoints.value = hitPoints.value + amount;
+            print("Adjusted HP by: " + amount + ". New value: " + hitPoints.value);
+            return true;
+        }
+        print("didnt adjust hitpoints");
+        return false;
+    }
+    public bool IncreaseStarDustPoints(int amount)
+    {
+        if (startDustPoints.value< maxStarDustPoints)
+        {
+            startDustPoints.value= startDustPoints.value+ amount;
+            print("Adjusted star dust points by: " + amount + ". New value: " + startDustPoints.value);
+            return true;
+        }
+        print("didnt adjust stardust points");
+        return false;
+    }
+    public bool DecreaseHitPoints(int amount)
+    {
+        if (hitPoints.value != 0)
+        {
+            hitPoints.value = hitPoints.value - amount;
             print("Adjusted HP by: " + amount + ". New value: " + hitPoints.value);
             return true;
         }

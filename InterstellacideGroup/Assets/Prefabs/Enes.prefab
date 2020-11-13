@@ -74,6 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 863295228}
   - component: {fileID: 863295229}
+  - component: {fileID: 819982038}
   m_Layer: 8
   m_Name: WeaponCase
   m_TagString: Untagged
@@ -146,6 +147,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &819982038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863295227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73048edeb63c9d146ad48fec6061a2ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradedGun: {fileID: 21300000, guid: 78d0aeaf83c8e234eb16fa02f089d2c2, type: 3}
+  cuPoints: 3
 --- !u!1 &2104679658
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0a532534b42f8fb39370acaa171f659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 19.38
+  movementSpeed: 22
 --- !u!114 &2117635527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,6 +486,7 @@ MonoBehaviour:
   damage: 10
   bulletPrefab: {fileID: 2978124753272218876, guid: 351d7fce42edd4b95ae6ebea5fbe801c, type: 3}
   fireRate: 0.2
+  cuPoints: 0
 --- !u!114 &8958782848347799988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,10 +500,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: {fileID: 11400000, guid: f9f27ce03a6770d6dab52eea136223a8, type: 2}
-  startingHitPoints: 10
+  startDustPoints: {fileID: 11400000, guid: 6afbab1fab4898a41b87d0747774e1a4, type: 2}
+  startingHitPoints: 0
+  startingStarDustPoints: 0
   maxHitPoints: 30
+  maxStarDustPoints: 3
   characterCategory: 0
   healthBarPrefab: {fileID: 0}
+  starDustBarPrefab: {fileID: 0}
 --- !u!95 &1170538987
 Animator:
   serializedVersion: 3
@@ -601,7 +621,7 @@ GameObject:
   - component: {fileID: 4121167081974375813}
   m_Layer: 8
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Player_Homing
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

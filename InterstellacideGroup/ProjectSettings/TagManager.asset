@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - CanBePickedUp
   - Player_Homing
+  - Damage
+  - DamageUfoAlien
   layers:
   - Default
   - TransparentFX
@@ -49,4 +51,10 @@ TagManager:
     locked: 0
   - name: Character
     uniqueID: 3110736239
+    locked: 0
+  - name: HealthMeter
+    uniqueID: 1870503577
+    locked: 0
+  - name: HealthMask
+    uniqueID: 2385722405
     locked: 0

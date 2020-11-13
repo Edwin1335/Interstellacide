@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 6236209611948350850}
   - component: {fileID: 6236209611948350851}
   - component: {fileID: 6236209611948350852}
-  - component: {fileID: 8811593808208731941}
+  - component: {fileID: -309781342106115967}
   m_Layer: 5
   m_Name: StartDustBar
   m_TagString: Untagged
@@ -357,7 +357,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8811593808208731941
+--- !u!114 &-309781342106115967
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -366,13 +366,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6236209611948350853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49298a32dbc8b9436a11b7940fdc2af4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2acba0bc27c8ce54383abeb796786ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: {fileID: 11400000, guid: f9f27ce03a6770d6dab52eea136223a8, type: 2}
+  starDustPoints: {fileID: 11400000, guid: 6afbab1fab4898a41b87d0747774e1a4, type: 2}
   character: {fileID: 0}
-  meterImage: {fileID: 0}
-  hpText: {fileID: 0}
+  meterImage: {fileID: 8769447899920949714}
 --- !u!1 &6478176983014968795
 GameObject:
   m_ObjectHideFlags: 0

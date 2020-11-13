@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1d23690003e9f1b9368a70ab065a7b, type: 3}
-  m_Name: Coin
+  m_Script: {fileID: 11500000, guid: bd275fc7562a2d14c8afdf500dcbbc4a, type: 3}
+  m_Name: StarDustPoints
   m_EditorClassIdentifier: 
-  objectName: coin
-  sprite: {fileID: 3906112111664580409, guid: 44844975240de2e4384f34000298dd9f, type: 3}
-  quantity: 0
-  stackable: 1
-  itemType: 0
+  value: 0
