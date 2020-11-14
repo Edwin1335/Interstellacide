@@ -4,6 +4,26 @@ using UnityEngine;
 
 public class ConfinerMovement : MonoBehaviour
 {
+
+
+    
+    void Awake()
+    {
+        // DontDestroyOnLoad(Character);
+        // DontDestroyOnLoad(this.gameObject);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     public float moveSpeed = 0.5f;
     Transform transform;
 
