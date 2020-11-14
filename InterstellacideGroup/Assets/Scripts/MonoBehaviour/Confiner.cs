@@ -35,6 +35,8 @@ public class Confiner : Character
         // healthBar = Instantiate(healthBarPrefab);
         // starDustBar = Instantiate(starDustBarPrefab);
         // Enes = Instantiate(EnesPrefab);
+
+        
         DontDestroyOnLoad(this.gameObject);
 
 

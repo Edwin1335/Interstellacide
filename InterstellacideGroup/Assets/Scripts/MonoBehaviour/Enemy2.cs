@@ -8,6 +8,8 @@ public class Enemy2 : MonoBehaviour
     public float speed;
     public float stoppingDistance;
     public float retreatDistance;
+    public int maxHitPoints;
+    public int deathPoints = 0;
     
     private float timeBtwShots;
     public float startTimeBtwShots;
@@ -49,5 +51,25 @@ public class Enemy2 : MonoBehaviour
             timeBtwShots -= Time.deltaTime;
         }
     }
+
+      void OnTriggerEnter2D(Collider2D collision)
+    {
+        //level one bullet one shot kill
+        if (collision.gameObject.CompareTag("PlayerLevelOneBullet"))
+        {
+            print("UFO GOT HIT ENEMY");
+
+                        Destroy(gameObject, .01f);
+            
+        }
+        //LEVEL 2 bullets stronger
+        // if (collision.gameObject.CompareTag("PlayerLevelTwoBullet"))
+        // {
+        //     print("UFO GOT HIT ENEMY");
+        //         Destroy(gameObject, .01f);
+            
+        // }
+    }
+
     
 }

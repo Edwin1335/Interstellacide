@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 349331048086423511}
   - component: {fileID: 349331048086423510}
   - component: {fileID: 349331048086423508}
+  - component: {fileID: 7297746873024996145}
   m_Layer: 8
   m_Name: Enemy2
   m_TagString: Enemy
@@ -101,3 +102,19 @@ MonoBehaviour:
   startTimeBtwShots: 2
   player: {fileID: 349331048086423511}
   projectile: {fileID: 3940240264757244448, guid: 55b38bae9e967874db0d30e96871986e, type: 3}
+--- !u!58 &7297746873024996145
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349331048086423513}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.7666667

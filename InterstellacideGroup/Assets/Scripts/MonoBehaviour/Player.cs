@@ -70,6 +70,21 @@ public class Player : MonoBehaviour
             print("HIT PLAYER");
             DecreaseHitPoints(2);
         }
+        //BIRD COLLISION
+        // if (collision.gameObject.CompareTag("DamageUfoAlien"))
+        // {
+        //     print("HIT PLAYER");
+        //     DecreaseHitPoints(2);
+        // }
+
+        //DANIEL ENEMY COLLISION
+        
+        // if (collision.gameObject.CompareTag("DamageUfoAlien"))
+        // {
+        //     print("HIT PLAYER");
+        //     DecreaseHitPoints(2);
+        // }
+        
     }
 
     public bool IncreaseHitPoints(int amount)
